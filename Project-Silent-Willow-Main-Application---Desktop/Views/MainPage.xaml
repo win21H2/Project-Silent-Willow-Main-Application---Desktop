@@ -9,9 +9,11 @@
     <Grid x:Name="ContentArea" Margin="{StaticResource SmallLeftTopRightBottomMargin}">
         <TextBlock Text="---------------------------------------------------------------------------------------------------------------------------------------------------"
                    HorizontalAlignment="Center"
+                   
                    Foreground="#DCDDDE"
                    FontSize="20"
                    FontFamily="TW Cen MT"/>
+        
         <Image Source="/Assets/StoreLogo.scale-400.png"
                Width="90"
                Height="90"
@@ -29,7 +31,7 @@
                 Width="100"
                 Height="40"
                 FontFamily="TW Cen MT"
-                FontSize="15"/>
+                FontSize="13"/>
         <Button Content="Disconnect"
                 BorderBrush="#DCDDDE"
                 HorizontalAlignment="Center"
@@ -40,8 +42,9 @@
                 Width="100"
                 Height="40"
                 FontFamily="TW Cen MT"
-                FontSize="15"/>
+                FontSize="13"/>
         <Button Content="BT ON"
+                Click="BTON"
                 BorderBrush="#DCDDDE"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
@@ -51,7 +54,7 @@
                 Width="100"
                 Height="40"
                 FontFamily="TW Cen MT"
-                FontSize="15"/>
+                FontSize="13"/>
         <Button Content="BT OFF"
                 BorderBrush="#DCDDDE"
                 HorizontalAlignment="Center"
@@ -62,7 +65,52 @@
                 Width="100"
                 Height="40"
                 FontFamily="TW Cen MT"
-                FontSize="15"/>
+                FontSize="13"/>
+
+        <ToggleButton Content="↑"
+                      BorderBrush="#DCDDDE"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"
+                      Margin="0,-200,0,0"
+                      CornerRadius="4"
+                      Background="#22272e"
+                      Width="100"
+                      Height="100"
+                      FontFamily="TW Cen MT"
+                      FontSize="20"/>
+        <ToggleButton Content="↓"
+                      BorderBrush="#DCDDDE"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"
+                      Margin="0,220,0,0"
+                      CornerRadius="4"
+                      Background="#22272e"
+                      Width="100"
+                      Height="100"
+                      FontFamily="TW Cen MT"
+                      FontSize="20"/>
+        <ToggleButton Content="→"
+                      BorderBrush="#DCDDDE"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"
+                      Margin="210,10,0,0"
+                      CornerRadius="4"
+                      Background="#22272e"
+                      Width="100"
+                      Height="100"
+                      FontFamily="TW Cen MT"
+                      FontSize="20"/>
+        <ToggleButton Content="←"
+                      BorderBrush="#DCDDDE"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Center"
+                      Margin="-210,10,0,0"
+                      CornerRadius="4"
+                      Background="#22272e"
+                      Width="100"
+                      Height="100"
+                      FontFamily="TW Cen MT"
+                      FontSize="20"/>
 
         <Slider VerticalAlignment="Bottom"
                 Width="300"/>
