@@ -7,11 +7,64 @@
     Style="{StaticResource PageStyle}" Background="#22272E"
     mc:Ignorable="d">
     <Grid x:Name="ContentArea" Margin="{StaticResource SmallLeftTopRightBottomMargin}">
-        <TextBlock Text="-----------------------------------------------------------------------------------------------------------------"
+        <TextBlock Text="---------------------------------------------------------------------------------------------------------------------------------------------------"
                    HorizontalAlignment="Center"
                    Foreground="#DCDDDE"
                    FontSize="20"
                    FontFamily="TW Cen MT"/>
+        <Image Source="/Assets/StoreLogo.scale-400.png"
+               Width="90"
+               Height="90"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"
+               Margin="0,35,0,0"/>
 
+        <Button Content="Connect"
+                BorderBrush="#DCDDDE"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Margin="-250,35,0,0"
+                CornerRadius="4"
+                Background="#22272e"
+                Width="100"
+                Height="40"
+                FontFamily="TW Cen MT"
+                FontSize="15"/>
+        <Button Content="Disconnect"
+                BorderBrush="#DCDDDE"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Margin="250,35,0,0"
+                CornerRadius="4"
+                Background="#22272e"
+                Width="100"
+                Height="40"
+                FontFamily="TW Cen MT"
+                FontSize="15"/>
+        <Button Content="BT ON"
+                BorderBrush="#DCDDDE"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Margin="-250,85,0,0"
+                CornerRadius="4"
+                Background="#22272e"
+                Width="100"
+                Height="40"
+                FontFamily="TW Cen MT"
+                FontSize="15"/>
+        <Button Content="BT OFF"
+                BorderBrush="#DCDDDE"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Margin="250,85,0,0"
+                CornerRadius="4"
+                Background="#22272e"
+                Width="100"
+                Height="40"
+                FontFamily="TW Cen MT"
+                FontSize="15"/>
+
+        <Slider VerticalAlignment="Bottom"
+                Width="300"/>
     </Grid>
 </Page>
