@@ -10,10 +10,10 @@ namespace Project_Silent_Willow_Main_Application___Desktop.Views {
         public MainPage() {
             InitializeComponent();
         }
-
-        void BTON(object sender, RoutedEventArgs e) {
-            Button button = sender as Button;
-            button.Background = new SolidColorBrush(Windows.UI.Colors.Red);
+        
+        void CONNECT_Click(object sender, RoutedEventArgs e) {
+            CONNECT.Foreground = new SolidColorBrush(Windows.UI.Colors.Green);
+            DISCONNECT.Foreground = new SolidColorBrush(Windows.UI.Colors.Blue);
         }
     }
 }
