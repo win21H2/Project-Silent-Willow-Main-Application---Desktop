@@ -21,11 +21,26 @@
                VerticalAlignment="Top"
                Margin="0,35,0,0"/>
 
+        <Button Content="TESTBUTTON"
+                x:Name="TESTBUTTON"
+                ClickMode="Release"
+                Click="TESTBUTTON_Click"
+                BorderBrush="#DCDDDE"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Margin="-1000,35,0,0"
+                CornerRadius="4"
+                Background="#22272e"
+                Width="100"
+                Height="100"
+                FontFamily="TW Cen MT"
+                FontSize="13"/>
+                
         <Button Content="Connect"
                 x:Name="CONNECT"
                 ClickMode="Release"
                 Click="CONNECT_Click"
-                BorderBrush="#DCDDDE"
+                BorderBrush="Green"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 Margin="-250,35,0,0"
@@ -37,7 +52,9 @@
                 FontSize="13"/>
         <Button Content="Disconnect"
                 x:Name="DISCONNECT"
-                BorderBrush="#DCDDDE"
+                ClickMode="Release"
+                Click="DISCONNECT_Click"
+                BorderBrush="Blue"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 Margin="250,35,0,0"
@@ -48,7 +65,9 @@
                 FontFamily="TW Cen MT"
                 FontSize="13"/>
         <Button Content="BT ON"
-                BorderBrush="#DCDDDE"
+                ClickMode="Release"
+                Click="BTON_Click"
+                BorderBrush="Yellow"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 Margin="-250,85,0,0"
@@ -59,7 +78,9 @@
                 FontFamily="TW Cen MT"
                 FontSize="13"/>
         <Button Content="BT OFF"
-                BorderBrush="#DCDDDE"
+                ClickMode="Release"
+                Click="BTOFF_Click"
+                BorderBrush="Red"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 Margin="250,85,0,0"
@@ -70,7 +91,8 @@
                 FontFamily="TW Cen MT"
                 FontSize="13"/>
 
-        <Button Content="Stop"
+        <!--CONTROL START-->
+        <Button Content="STOP"
                 BorderBrush="#DCDDDE"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
@@ -125,6 +147,7 @@
                       Height="100"
                       FontFamily="TW Cen MT"
                       FontSize="20"/>
+        <!--CONTROL END-->
 
         <Slider VerticalAlignment="Bottom"
                 Width="300"/>
