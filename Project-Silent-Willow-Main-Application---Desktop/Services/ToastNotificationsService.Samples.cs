@@ -28,9 +28,7 @@ namespace Project_Silent_Willow_Main_Application___Desktop.Services {
                         // More about Toast Buttons at https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.notifications.toastbutton
                         new ToastButton("OK", "ToastButtonActivationArguments") {
                             ActivationType = ToastActivationType.Foreground
-                        },
-
-                        new ToastButtonDismiss("Cancel")
+                        }
                     }
                 }
             };

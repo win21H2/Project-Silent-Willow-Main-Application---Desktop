@@ -64,32 +64,6 @@
                 Height="40"
                 FontFamily="TW Cen MT"
                 FontSize="13"/>
-        <Button Content="BT ON"
-                ClickMode="Release"
-                Click="BTON_Click"
-                BorderBrush="Yellow"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                Margin="-250,85,0,0"
-                CornerRadius="4"
-                Background="#22272e"
-                Width="100"
-                Height="40"
-                FontFamily="TW Cen MT"
-                FontSize="13"/>
-        <Button Content="BT OFF"
-                ClickMode="Release"
-                Click="BTOFF_Click"
-                BorderBrush="Red"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                Margin="250,85,0,0"
-                CornerRadius="4"
-                Background="#22272e"
-                Width="100"
-                Height="40"
-                FontFamily="TW Cen MT"
-                FontSize="13"/>
 
         <!--CONTROL START-->
         <Button Content="STOP"
