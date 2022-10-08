@@ -17,7 +17,7 @@ namespace Project_Silent_Willow_Main_Application___Desktop.Services {
                             },
 
                             new AdaptiveText() {
-                                 Text = @"Click OK to see how activation from a toast notification can be handled in the ToastNotificationService."
+                                 Text = @"Opened Project Silent Willow---Desktop"
                             }
                         }
                     }
@@ -39,9 +39,6 @@ namespace Project_Silent_Willow_Main_Application___Desktop.Services {
                 // More details at https://docs.microsoft.com/uwp/api/windows.ui.notifications.toastnotification.tag
                 Tag = "ToastTag"
             };
-
-            // And show the toast
-            ShowToastNotification(toast);
         }
     }
 }

@@ -1,49 +1,54 @@
 ﻿using Microsoft.Toolkit.Uwp.Notifications;
 using Project_Silent_Willow_Main_Application___Desktop.ViewModels;
-using System;
-using System.Xml;
-using System.Xml.Linq;
-using Windows.UI.Notifications;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Media;
 
 namespace Project_Silent_Willow_Main_Application___Desktop.Views {
     public sealed partial class MainPage : Page {
         public MainViewModel ViewModel { get; } = new MainViewModel();
 
-        public MainPage() {
+        public MainPage() { 
             InitializeComponent();
         }
 
-        // TRY TO USE THE CODE FROM THE SERVICE FILE
-
+        /*
+         * TODO
+         *  - Work on checking if the device hsa Bluetooth enabled
+         *  - Try to open the settings page from a toast notif
+         *  - Work on changing the state of the toggle buttons when another one is pressed
+         *  - Work on listing BT devices
+         */
 
         void CONNECT_Click(object sender, RoutedEventArgs e) {  
-            TESTBUTTON.Foreground = new SolidColorBrush(Windows.UI.Colors.Green);
-            // MAKE IT LAUNCH A TOAST IF THE USER DOES NOT HAVE BLUETOOTH TURNED ON
-            /* IDEAS
-             * 
-             * If the user does not have Bluetooth turned on, prompt them to go to settings and turn it on
-             * TO CONTINUE WITH THE POINT ABOVE
-             * Find out a way to launch the settings app and navigate to the Bluetooth settings page
-             * 
-             * OR
-             * 
-             * Figure out a way to turn on Bluetooth directly from the toast (look at docs)
-             */
 
+
+            /*
+            new ToastContentBuilder()
+                .SetToastScenario(ToastScenario.Reminder)
+                .AddArgument("action", "viewEvent")
+                .AddArgument("eventId", 1983)
+                .AddText("ERROR_BLUETOOTH_NOT_ENABLED")
+
+                .AddButton(new ToastButton()
+                    .SetContent("Settings")
+                    .AddArgument("action", "viewDetails"))
+
+                .Show();*/
         }
 
         void DISCONNECT_Click(object sender, RoutedEventArgs e) {
-            TESTBUTTON.Foreground = new SolidColorBrush(Windows.UI.Colors.Blue);
-            // MAKE IT LAUNCH A TOAST WHICH DISPLAYS THAT THE COMPUTER HAS DISCONNECTED
-        }
+            new ToastContentBuilder()
+               .SetToastScenario(ToastScenario.Reminder)
+               .AddArgument("action", "viewEvent")
+               .AddArgument("eventId", 1983)
+               .AddText("PROJECT_SILENT_WILLOW_STATE_DISCONNECTED")
 
+               .AddButton(new ToastButton()
+                   .SetContent("Ok"))
 
-        void TESTBUTTON_Click(object sender, RoutedEventArgs e) {
-            TESTBUTTON.Foreground = new SolidColorBrush(Windows.UI.Colors.White);
-            // NO EXTRA FUNCTIONS NEEDED
+               .Show();
         }
     }
 }

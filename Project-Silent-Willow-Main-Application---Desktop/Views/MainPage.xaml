@@ -4,9 +4,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
     Style="{StaticResource PageStyle}" Background="#22272E"
     mc:Ignorable="d">
+
     <Grid x:Name="ContentArea" Margin="{StaticResource SmallLeftTopRightBottomMargin}">
+
         <TextBlock Text="---------------------------------------------------------------------------------------------------------------------------------------------------"
                    HorizontalAlignment="Center"
                    x:Name="STATUS"
@@ -21,26 +24,11 @@
                VerticalAlignment="Top"
                Margin="0,35,0,0"/>
 
-        <Button Content="TESTBUTTON"
-                x:Name="TESTBUTTON"
-                ClickMode="Release"
-                Click="TESTBUTTON_Click"
-                BorderBrush="#DCDDDE"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                Margin="-1000,35,0,0"
-                CornerRadius="4"
-                Background="#22272e"
-                Width="100"
-                Height="100"
-                FontFamily="TW Cen MT"
-                FontSize="13"/>
-                
         <Button Content="Connect"
                 x:Name="CONNECT"
                 ClickMode="Release"
                 Click="CONNECT_Click"
-                BorderBrush="Green"
+                BorderBrush="#DCDDDE"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 Margin="-250,35,0,0"
@@ -54,7 +42,7 @@
                 x:Name="DISCONNECT"
                 ClickMode="Release"
                 Click="DISCONNECT_Click"
-                BorderBrush="Blue"
+                BorderBrush="#DCDDDE"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 Margin="250,35,0,0"
